@@ -25,8 +25,6 @@ const App = () => {
       setLevel((prevLevel) => prevLevel + 1)
       setIsLoading(true)
     }
-
-    shuffle(imageData)
   }, [score])
 
   useEffect(() => {
@@ -54,6 +52,7 @@ const App = () => {
       setClickedImages((prevState) => {
         return [...prevState, id]
       })
+      shuffle(imageData)
       setScore((prevScore) => prevScore + 1)
     } else {
       setClickedImages([])
