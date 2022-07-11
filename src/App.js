@@ -1,11 +1,17 @@
 import React, { useEffect, useState } from 'react'
 import CardContainer from './components/CardContainer'
-import { dogs } from './components/data'
+import ReactLoading from 'react-loading'
+import { levels } from './components/data'
 import Header from './components/Header'
 import Score from './components/Score'
 
+import styles from './styles/App.module.css'
+
 const App = () => {
-  const [imageData, setImageData] = useState(dogs)
+  const { level1, level2, level3, level4 } = levels
+  const [level, setLevel] = useState(1)
+  const [isLoading, setIsLoading] = useState(false)
+  const [imageData, setImageData] = useState(level1)
   const [clickedImages, setClickedImages] = useState([])
   const [score, setScore] = useState(0)
   const [bestScore, setBestScore] = useState(0)
@@ -14,7 +20,26 @@ const App = () => {
     setBestScore((prevBestScore) => {
       return prevBestScore <= score ? score : prevBestScore
     })
-  })
+
+    if (score === imageData.length) {
+      setLevel((prevLevel) => prevLevel + 1)
+      setIsLoading(true)
+    }
+  }, [score])
+
+  useEffect(() => {
+    setImageData(() => {
+      if (level === 2) return shuffle(level2)
+      if (level === 3) return shuffle(level3)
+      if (level === 4) return shuffle(level4)
+      return shuffle(level1)
+    })
+
+    setTimeout(() => {
+      setIsLoading(false)
+    }, 700)
+  }, [level])
+
   const clickHandler = (id) => {
     if (!clickedImages.includes(id)) {
       setClickedImages((prevState) => {
@@ -28,8 +53,6 @@ const App = () => {
     }
 
     shuffle(imageData)
-    console.log(clickedImages)
-    console.log(score)
   }
 
   // Using Fisher-Yates algo
@@ -43,13 +66,27 @@ const App = () => {
 
     setImageData(newArray)
   }
+  console.log(imageData)
 
   return (
     <div>
       <Header />
       <Score title='Score' score={score} />
       <Score title='Best' score={bestScore} />
-      <CardContainer imageData={imageData} onClick={(id) => clickHandler(id)} />
+      {isLoading ? (
+        <ReactLoading
+          className={styles.loading}
+          type='bubbles'
+          color='#0000FF'
+          height={200}
+          width={100}
+        />
+      ) : (
+        <CardContainer
+          imageData={imageData}
+          onClick={(id) => clickHandler(id)}
+        />
+      )}
     </div>
   )
 }
