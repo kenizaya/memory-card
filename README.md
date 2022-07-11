@@ -1,3 +1,6 @@
+Image Credits :
+<a href='https://www.freepik.com/vectors/dog-breeds'>Dog breeds vector created by macrovector - www.freepik.com</a>
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
