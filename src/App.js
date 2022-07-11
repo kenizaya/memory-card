@@ -9,6 +9,7 @@ const App = () => {
   const { level1, level2, level3, level4 } = levels
   const [level, setLevel] = useState(1)
   const [isLoading, setIsLoading] = useState(false)
+  const [isGameOver, setIsGameOver] = useState(false)
   const [imageData, setImageData] = useState(level1)
   const [clickedImages, setClickedImages] = useState([])
   const [score, setScore] = useState(0)
@@ -26,16 +27,18 @@ const App = () => {
   }, [score])
 
   useEffect(() => {
-    setImageData(() => {
-      if (level === 2) return shuffle(level2)
-      if (level === 3) return shuffle(level3)
-      if (level === 4) return shuffle(level4)
-      return shuffle(level1)
-    })
+    if (level < 4) {
+      setImageData(() => {
+        if (level === 2) return shuffle(level2)
+        // if (level === 3) return shuffle(level3)
+        // if (level === 4) return shuffle(level4)
+        return shuffle(level1)
+      })
 
-    setTimeout(() => {
-      setIsLoading(false)
-    }, 1500)
+      setTimeout(() => {
+        setIsLoading(false)
+      }, 1500)
+    } else 
   }, [level])
 
   const clickHandler = (id) => {
@@ -69,8 +72,7 @@ const App = () => {
   return (
     <div>
       <Header />
-      <Score title='Score' score={score} />
-      <Score title='Best' score={bestScore} />
+      <Score score={score} bestScore={bestScore} />
       {isLoading ? (
         <Loader level={level} />
       ) : (

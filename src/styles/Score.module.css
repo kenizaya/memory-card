@@ -1,0 +1,17 @@
+.scoreContainer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+}
+
+.score,
+.bestScore {
+  padding: 20px 60px;
+  background-color: #f86a6a;
+  border-radius: 16px;
+}
+
+.bestScore {
+  background-color: #65d6ad;
+}
