@@ -3,5 +3,6 @@
   flex-wrap: wrap;
   gap: 50px;
   justify-content: center;
-  padding: 50px;
+  padding: 40px;
+  min-height: 60vh;
 }

@@ -4,6 +4,7 @@ import { levels } from './components/data'
 import Header from './components/Header'
 import Score from './components/Score'
 import Loader from './components/Loader'
+import Footer from './components/Footer'
 
 const App = () => {
   const { level1, level2, level3, level4 } = levels
@@ -90,6 +91,7 @@ const App = () => {
           onClick={(id) => clickHandler(id)}
         />
       )}
+      <Footer />
     </div>
   )
 }

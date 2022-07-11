@@ -1,7 +1,8 @@
 import React from 'react'
+import styles from '../styles/GameOver.module.css'
 
 const GameOver = () => {
-  return <div>GameOver</div>
+  return <div className={styles.gameover}>GameOver</div>
 }
 
 export default GameOver
