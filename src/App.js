@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import Cards from './components/Cards'
+import CardContainer from './components/CardContainer'
 import { dogs } from './components/data'
 import Header from './components/Header'
 import Score from './components/Score'
@@ -49,7 +49,7 @@ const App = () => {
       <Header />
       <Score title='Score' score={score} />
       <Score title='Best' score={bestScore} />
-      <Cards imageData={imageData} onClick={(id) => clickHandler(id)} />
+      <CardContainer imageData={imageData} onClick={(id) => clickHandler(id)} />
     </div>
   )
 }
