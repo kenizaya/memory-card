@@ -10,7 +10,6 @@ const App = () => {
   const { level1, level2, level3, level4 } = levels
   const [level, setLevel] = useState(1)
   const [isLoading, setIsLoading] = useState(false)
-  const [isGameOver, setIsGameOver] = useState(false)
   const [imageData, setImageData] = useState(level1)
   const [scoreToNextLevel, setScoreToNextLevel] = useState(level1.length)
   const [clickedImages, setClickedImages] = useState([])
@@ -21,12 +20,13 @@ const App = () => {
     setBestScore((prevBestScore) => {
       return prevBestScore <= score ? score : prevBestScore
     })
-    console.log(scoreToNextLevel)
-    console.log(level)
+
     if (score === scoreToNextLevel) {
       setLevel((prevLevel) => prevLevel + 1)
       setIsLoading(true)
     }
+
+    shuffle(imageData)
   }, [score])
 
   useEffect(() => {
@@ -40,7 +40,6 @@ const App = () => {
 
       if (score === scoreToNextLevel)
         setScoreToNextLevel((prevScore) => {
-          console.log(level)
           return prevScore + 4 * level
         })
 
@@ -55,15 +54,12 @@ const App = () => {
       setClickedImages((prevState) => {
         return [...prevState, id]
       })
-
       setScore((prevScore) => prevScore + 1)
     } else {
       setClickedImages([])
       setScore(0)
-      setIsGameOver(true)
+      setImageData(level1)
     }
-
-    shuffle(imageData)
   }
 
   // Using Fisher-Yates algo
@@ -77,7 +73,6 @@ const App = () => {
 
     setImageData(newArray)
   }
-  console.log(imageData)
 
   return (
     <div>

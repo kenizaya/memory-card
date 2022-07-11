@@ -2,7 +2,7 @@ import React from 'react'
 import styles from '../styles/Score.module.css'
 
 const Score = (props) => {
-  const { score, bestScore, level } = props
+  const { score, bestScore } = props
   return (
     <div className={styles.scoreContainer}>
       <h2 className={styles.score}>{'Score: ' + score}</h2>
