@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+  padding: 50px;
+}
+
+img {
+  width: 200px;
+}
+
+.card {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 20px;
+  width: 260px;
+  border: 2px solid black;
+  cursor: pointer;
+  transition: transform 0.2s;
+  border-radius: 8px;
+  box-shadow: 0, 0.1, 0.2, hsla(0, 0, 0, 0.2);
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
