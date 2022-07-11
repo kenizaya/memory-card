@@ -81,7 +81,7 @@ const App = () => {
 
   return (
     <div>
-      <Header />
+      <Header level={level} />
       <Score score={score} bestScore={bestScore} />
       {isLoading ? (
         <Loader level={level} />
