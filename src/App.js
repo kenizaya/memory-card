@@ -1,11 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import CardContainer from './components/CardContainer'
-import ReactLoading from 'react-loading'
 import { levels } from './components/data'
 import Header from './components/Header'
 import Score from './components/Score'
-
-import styles from './styles/App.module.css'
+import Loader from './components/Loader'
 
 const App = () => {
   const { level1, level2, level3, level4 } = levels
@@ -37,7 +35,7 @@ const App = () => {
 
     setTimeout(() => {
       setIsLoading(false)
-    }, 700)
+    }, 1500)
   }, [level])
 
   const clickHandler = (id) => {
@@ -74,13 +72,7 @@ const App = () => {
       <Score title='Score' score={score} />
       <Score title='Best' score={bestScore} />
       {isLoading ? (
-        <ReactLoading
-          className={styles.loading}
-          type='bubbles'
-          color='#0000FF'
-          height={200}
-          width={100}
-        />
+        <Loader level={level} />
       ) : (
         <CardContainer
           imageData={imageData}
