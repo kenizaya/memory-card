@@ -1,7 +1,7 @@
 import React from 'react'
-import styles from '../styles/Card.module.css'
+import styles from '../styles/Cards.module.css'
 
-const Card = (props) => {
+const Cards = (props) => {
   const { imageData, onClick } = props
   return (
     <div className={styles.container}>
@@ -21,4 +21,4 @@ const Card = (props) => {
   )
 }
 
-export default Card
+export default Cards

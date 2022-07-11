@@ -1,7 +1,8 @@
-import React, { useState } from 'react'
-import Card from './components/Card'
+import React, { useEffect, useState } from 'react'
+import Cards from './components/Cards'
 import { dogs } from './components/data'
 import Header from './components/Header'
+import Score from './components/Score'
 
 const App = () => {
   const [imageData, setImageData] = useState(dogs)
@@ -9,15 +10,26 @@ const App = () => {
   const [score, setScore] = useState(0)
   const [bestScore, setBestScore] = useState(0)
 
+  useEffect(() => {
+    setBestScore((prevBestScore) => {
+      return prevBestScore <= score ? score : prevBestScore
+    })
+  })
   const clickHandler = (id) => {
     if (!clickedImages.includes(id)) {
       setClickedImages((prevState) => {
         return [...prevState, id]
       })
-    } else setClickedImages([])
+
+      setScore((prevScore) => prevScore + 1)
+    } else {
+      setClickedImages([])
+      setScore(0)
+    }
 
     shuffle(imageData)
     console.log(clickedImages)
+    console.log(score)
   }
 
   // Using Fisher-Yates algo
@@ -35,7 +47,9 @@ const App = () => {
   return (
     <div>
       <Header />
-      <Card imageData={imageData} onClick={(id) => clickHandler(id)} />
+      <Score title='Score' score={score} />
+      <Score title='Best' score={bestScore} />
+      <Cards imageData={imageData} onClick={(id) => clickHandler(id)} />
     </div>
   )
 }
