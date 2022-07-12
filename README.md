@@ -1,3 +1,19 @@
+## Memory Card Project to practice React state and hooks
+
+**Tech Used:**
+
+- React
+- Hooks
+- JSX
+- HTML
+- CSS
+- Javascript
+
+Live Link: https://kenizaya.github.io/memory-card/
+
+![Memory-Card](https://user-images.githubusercontent.com/104677763/178380261-787912b9-1088-4d04-b9d6-370690d6941e.png)
+
+
 Image Credits :
 <a href='https://www.freepik.com/vectors/dog-breeds'>Dog breeds vector created by macrovector - www.freepik.com</a>
 
