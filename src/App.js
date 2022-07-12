@@ -80,7 +80,6 @@ const App = () => {
 
     setImageData(newArray)
   }
-  console.log(hasWon)
 
   return (
     <div>
