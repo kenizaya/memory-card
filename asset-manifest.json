@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/memory-card/static/css/main.f0b417ac.css",
-    "main.js": "/memory-card/static/js/main.1fb34e7f.js",
+    "main.js": "/memory-card/static/js/main.52e31da5.js",
     "static/media/shih-tzu.jpg": "/memory-card/static/media/shih-tzu.d033c966944789398de4.jpg",
     "static/media/siberian-husky.jpg": "/memory-card/static/media/siberian-husky.bd5f75321e825aeb0f3b.jpg",
     "static/media/akita-inu.jpg": "/memory-card/static/media/akita-inu.1ad2efbc89cbbd13f035.jpg",
@@ -20,10 +20,10 @@
     "static/media/pug.jpg": "/memory-card/static/media/pug.f0dd5fba3556644139b5.jpg",
     "index.html": "/memory-card/index.html",
     "main.f0b417ac.css.map": "/memory-card/static/css/main.f0b417ac.css.map",
-    "main.1fb34e7f.js.map": "/memory-card/static/js/main.1fb34e7f.js.map"
+    "main.52e31da5.js.map": "/memory-card/static/js/main.52e31da5.js.map"
   },
   "entrypoints": [
     "static/css/main.f0b417ac.css",
-    "static/js/main.1fb34e7f.js"
+    "static/js/main.52e31da5.js"
   ]
 }
