@@ -43,7 +43,6 @@ const App = () => {
 
   const clickHandler = (id) => {
     if (!clickedImages.includes(id)) {
-      console.log(id)
       setClickedImages((prevState) => {
         return [...prevState, id]
       })

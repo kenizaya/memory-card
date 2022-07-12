@@ -8,7 +8,7 @@ const CardContainer = (props) => {
   return (
     <div className={styles.container}>
       {imageData.map((image) => (
-        <Card image={image} onClick={onClick} />
+        <Card image={image} onClick={onClick} key={image.id} />
       ))}
     </div>
   )

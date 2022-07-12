@@ -6,6 +6,7 @@ const Loading = (props) => {
   return (
     <div className={styles.loaderContainer}>
       <div className={styles.loader}>Loading Level {level}</div>
+      <h3>Don't Click Previously Clicked Images!</h3>
     </div>
   )
 }
