@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/kenizaya/memory-card/static/css/main.f3054f4a.css",
-    "main.js": "/kenizaya/memory-card/static/js/main.76a571db.js",
-    "static/media/shih-tzu.jpg": "/kenizaya/memory-card/static/media/shih-tzu.d033c966944789398de4.jpg",
-    "static/media/siberian-husky.jpg": "/kenizaya/memory-card/static/media/siberian-husky.bd5f75321e825aeb0f3b.jpg",
-    "static/media/akita-inu.jpg": "/kenizaya/memory-card/static/media/akita-inu.1ad2efbc89cbbd13f035.jpg",
-    "static/media/jack-russell-terrier.jpg": "/kenizaya/memory-card/static/media/jack-russell-terrier.0a658d46fde35370bae2.jpg",
-    "static/media/beagle.jpg": "/kenizaya/memory-card/static/media/beagle.2daeaafe361c04ed8e35.jpg",
-    "static/media/saint-bernard.jpg": "/kenizaya/memory-card/static/media/saint-bernard.e0a1c8459c7f49a67477.jpg",
-    "static/media/pomeranian.jpg": "/kenizaya/memory-card/static/media/pomeranian.c68bcdde69c3552cdcbc.jpg",
-    "static/media/dalmatian.jpg": "/kenizaya/memory-card/static/media/dalmatian.5dc8cc3a5287eee72e70.jpg",
-    "static/media/welsh-corgi.jpg": "/kenizaya/memory-card/static/media/welsh-corgi.570e93387d3657b37d7c.jpg",
-    "static/media/golden-retriever.jpg": "/kenizaya/memory-card/static/media/golden-retriever.f7208eba7cd53a15793a.jpg",
-    "static/media/chihuahua.jpg": "/kenizaya/memory-card/static/media/chihuahua.9efe3e52fccbaffcb03e.jpg",
-    "static/media/rottweiler.jpg": "/kenizaya/memory-card/static/media/rottweiler.95c253c3d319415a807a.jpg",
-    "static/media/giant-schnauzer.jpg": "/kenizaya/memory-card/static/media/giant-schnauzer.1b83b86aebe461aa92b5.jpg",
-    "static/media/doberman-pinscher.jpg": "/kenizaya/memory-card/static/media/doberman-pinscher.5e1a87a2e4378aff9074.jpg",
-    "static/media/dachshund.jpg": "/kenizaya/memory-card/static/media/dachshund.faec3644d32b237fcd5d.jpg",
-    "static/media/pug.jpg": "/kenizaya/memory-card/static/media/pug.f0dd5fba3556644139b5.jpg",
-    "index.html": "/kenizaya/memory-card/index.html",
-    "main.f3054f4a.css.map": "/kenizaya/memory-card/static/css/main.f3054f4a.css.map",
-    "main.76a571db.js.map": "/kenizaya/memory-card/static/js/main.76a571db.js.map"
+    "main.css": "/memory-card/static/css/main.f3054f4a.css",
+    "main.js": "/memory-card/static/js/main.eeb8ca5e.js",
+    "static/media/shih-tzu.jpg": "/memory-card/static/media/shih-tzu.d033c966944789398de4.jpg",
+    "static/media/siberian-husky.jpg": "/memory-card/static/media/siberian-husky.bd5f75321e825aeb0f3b.jpg",
+    "static/media/akita-inu.jpg": "/memory-card/static/media/akita-inu.1ad2efbc89cbbd13f035.jpg",
+    "static/media/jack-russell-terrier.jpg": "/memory-card/static/media/jack-russell-terrier.0a658d46fde35370bae2.jpg",
+    "static/media/beagle.jpg": "/memory-card/static/media/beagle.2daeaafe361c04ed8e35.jpg",
+    "static/media/saint-bernard.jpg": "/memory-card/static/media/saint-bernard.e0a1c8459c7f49a67477.jpg",
+    "static/media/pomeranian.jpg": "/memory-card/static/media/pomeranian.c68bcdde69c3552cdcbc.jpg",
+    "static/media/dalmatian.jpg": "/memory-card/static/media/dalmatian.5dc8cc3a5287eee72e70.jpg",
+    "static/media/welsh-corgi.jpg": "/memory-card/static/media/welsh-corgi.570e93387d3657b37d7c.jpg",
+    "static/media/golden-retriever.jpg": "/memory-card/static/media/golden-retriever.f7208eba7cd53a15793a.jpg",
+    "static/media/chihuahua.jpg": "/memory-card/static/media/chihuahua.9efe3e52fccbaffcb03e.jpg",
+    "static/media/rottweiler.jpg": "/memory-card/static/media/rottweiler.95c253c3d319415a807a.jpg",
+    "static/media/giant-schnauzer.jpg": "/memory-card/static/media/giant-schnauzer.1b83b86aebe461aa92b5.jpg",
+    "static/media/doberman-pinscher.jpg": "/memory-card/static/media/doberman-pinscher.5e1a87a2e4378aff9074.jpg",
+    "static/media/dachshund.jpg": "/memory-card/static/media/dachshund.faec3644d32b237fcd5d.jpg",
+    "static/media/pug.jpg": "/memory-card/static/media/pug.f0dd5fba3556644139b5.jpg",
+    "index.html": "/memory-card/index.html",
+    "main.f3054f4a.css.map": "/memory-card/static/css/main.f3054f4a.css.map",
+    "main.eeb8ca5e.js.map": "/memory-card/static/js/main.eeb8ca5e.js.map"
   },
   "entrypoints": [
     "static/css/main.f3054f4a.css",
-    "static/js/main.76a571db.js"
+    "static/js/main.eeb8ca5e.js"
   ]
 }
