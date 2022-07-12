@@ -11,7 +11,6 @@ const App = () => {
   const [level, setLevel] = useState(1)
   const [isLoading, setIsLoading] = useState(false)
   const [imageData, setImageData] = useState(level1)
-  const [scoreToNextLevel, setScoreToNextLevel] = useState(level1.length)
   const [clickedImages, setClickedImages] = useState([])
   const [score, setScore] = useState(0)
   const [bestScore, setBestScore] = useState(0)
@@ -21,7 +20,7 @@ const App = () => {
       return prevBestScore <= score ? score : prevBestScore
     })
 
-    if (score === scoreToNextLevel) {
+    if (score === imageData.length) {
       setLevel((prevLevel) => prevLevel + 1)
       setIsLoading(true)
     }
@@ -36,11 +35,6 @@ const App = () => {
         return shuffle(level1)
       })
 
-      if (score === scoreToNextLevel)
-        setScoreToNextLevel((prevScore) => {
-          return prevScore + 4 * level
-        })
-
       setTimeout(() => {
         setIsLoading(false)
       }, 1500)
@@ -49,12 +43,14 @@ const App = () => {
 
   const clickHandler = (id) => {
     if (!clickedImages.includes(id)) {
+      console.log(id)
       setClickedImages((prevState) => {
         return [...prevState, id]
       })
       shuffle(imageData)
       setScore((prevScore) => prevScore + 1)
     } else {
+      setLevel(1)
       setClickedImages([])
       setScore(0)
       setImageData(level1)
