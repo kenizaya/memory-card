@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/memory-card/static/css/main.f3054f4a.css",
-    "main.js": "/memory-card/static/js/main.eeb8ca5e.js",
+    "main.css": "/memory-card/static/css/main.f0b417ac.css",
+    "main.js": "/memory-card/static/js/main.f0bbae75.js",
     "static/media/shih-tzu.jpg": "/memory-card/static/media/shih-tzu.d033c966944789398de4.jpg",
     "static/media/siberian-husky.jpg": "/memory-card/static/media/siberian-husky.bd5f75321e825aeb0f3b.jpg",
     "static/media/akita-inu.jpg": "/memory-card/static/media/akita-inu.1ad2efbc89cbbd13f035.jpg",
@@ -19,11 +19,11 @@
     "static/media/dachshund.jpg": "/memory-card/static/media/dachshund.faec3644d32b237fcd5d.jpg",
     "static/media/pug.jpg": "/memory-card/static/media/pug.f0dd5fba3556644139b5.jpg",
     "index.html": "/memory-card/index.html",
-    "main.f3054f4a.css.map": "/memory-card/static/css/main.f3054f4a.css.map",
-    "main.eeb8ca5e.js.map": "/memory-card/static/js/main.eeb8ca5e.js.map"
+    "main.f0b417ac.css.map": "/memory-card/static/css/main.f0b417ac.css.map",
+    "main.f0bbae75.js.map": "/memory-card/static/js/main.f0bbae75.js.map"
   },
   "entrypoints": [
-    "static/css/main.f3054f4a.css",
-    "static/js/main.eeb8ca5e.js"
+    "static/css/main.f0b417ac.css",
+    "static/js/main.f0bbae75.js"
   ]
 }
