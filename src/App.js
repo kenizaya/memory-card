@@ -55,7 +55,7 @@ const App = () => {
       setClickedImages((prevState) => {
         return [...prevState, id]
       })
-      shuffle(imageData)
+      setImageData(shuffle(imageData))
       setScore((prevScore) => prevScore + 1)
     } else {
       resetBoard()
@@ -67,7 +67,7 @@ const App = () => {
     setHasWon(false)
     setClickedImages([])
     setScore(0)
-    setImageData(level1)
+    setImageData(shuffle(level1))
   }
   // Using Fisher-Yates algo
   const shuffle = (array) => {
@@ -78,7 +78,7 @@ const App = () => {
       ;[newArray[i], newArray[j]] = [newArray[j], newArray[i]]
     }
 
-    setImageData(newArray)
+    return newArray
   }
 
   return (
@@ -89,7 +89,7 @@ const App = () => {
         <Loader level={level} />
       ) : (
         <CardContainer
-          imageData={imageData}
+          imageData={imageData || level1}
           onClick={(id) => clickHandler(id)}
         />
       )}
