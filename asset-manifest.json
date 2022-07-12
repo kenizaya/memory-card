@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/kenizaya/memory-card/static/css/main.4ec35783.css",
-    "main.js": "/kenizaya/memory-card/static/js/main.d0301497.js",
+    "main.css": "/kenizaya/memory-card/static/css/main.f3054f4a.css",
+    "main.js": "/kenizaya/memory-card/static/js/main.76a571db.js",
     "static/media/shih-tzu.jpg": "/kenizaya/memory-card/static/media/shih-tzu.d033c966944789398de4.jpg",
     "static/media/siberian-husky.jpg": "/kenizaya/memory-card/static/media/siberian-husky.bd5f75321e825aeb0f3b.jpg",
     "static/media/akita-inu.jpg": "/kenizaya/memory-card/static/media/akita-inu.1ad2efbc89cbbd13f035.jpg",
@@ -19,11 +19,11 @@
     "static/media/dachshund.jpg": "/kenizaya/memory-card/static/media/dachshund.faec3644d32b237fcd5d.jpg",
     "static/media/pug.jpg": "/kenizaya/memory-card/static/media/pug.f0dd5fba3556644139b5.jpg",
     "index.html": "/kenizaya/memory-card/index.html",
-    "main.4ec35783.css.map": "/kenizaya/memory-card/static/css/main.4ec35783.css.map",
-    "main.d0301497.js.map": "/kenizaya/memory-card/static/js/main.d0301497.js.map"
+    "main.f3054f4a.css.map": "/kenizaya/memory-card/static/css/main.f3054f4a.css.map",
+    "main.76a571db.js.map": "/kenizaya/memory-card/static/js/main.76a571db.js.map"
   },
   "entrypoints": [
-    "static/css/main.4ec35783.css",
-    "static/js/main.d0301497.js"
+    "static/css/main.f3054f4a.css",
+    "static/js/main.76a571db.js"
   ]
 }
